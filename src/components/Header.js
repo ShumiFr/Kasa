@@ -3,10 +3,10 @@ import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src="./Logo.svg" alt="Logo Kasa" />
       <Navigation />
-    </div>
+    </header>
   );
 };
 

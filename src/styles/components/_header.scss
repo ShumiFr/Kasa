@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    margin: 0 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation li {
+    font-size: 24px;
+    margin: 50px;
+    color: #FF6060;
+}
+
+.navigation a {
+    text-decoration: none;
+}
+
+.navigation .active {
+    text-decoration: underline;
+    color: #FF6060;
+}

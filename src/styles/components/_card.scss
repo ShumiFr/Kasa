@@ -1,0 +1,39 @@
+.card {
+    height: 340px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.5s all;
+}
+
+
+.card .overlay{
+    position: absolute;
+    background-image: linear-gradient(to bottom, #ffffff00, #00000050); 
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.card span {
+    position: absolute;
+    text-align: left;
+    bottom: 13px;
+    left: 13px;
+    color: #fff;
+    z-index: 2;
+}
