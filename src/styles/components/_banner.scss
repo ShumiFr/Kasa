@@ -1,12 +1,41 @@
 .banner {
-    margin: 50px;
-    padding: 100px;
-    color: #fff;
-    text-align: center;
-    border-radius: 25px;
+    height: 230px;
+    position: relative;
+    margin: 0 40px;
+}
+
+.banner .overlay {
+    position: absolute;
+    background: #00000030;
+    border-radius: 30px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .banner h1 {
-    font-weight: 500;
-    font-size: 48px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: normal;
+    z-index: 2;
+    font-size: 3.6vw;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:1000px) {
+    .banner {
+        height: 110px;
+        margin: 0 20px;
+    }
 }
