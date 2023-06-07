@@ -1,11 +1,13 @@
 import React from "react";
 
-const Banner = () => {
+function Banner(props) {
   return (
     <div className="banner">
-      <h1>Chez vous, partout et ailleurs</h1>
+      <div className="overlay"></div>
+      <img src={props.imgSrc} alt={props.imgAlt} />
+      {props.title ? <h1>{props.title}</h1> : null}
     </div>
   );
-};
+}
 
 export default Banner;

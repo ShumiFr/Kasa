@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 
-const Home = () => {
+function Home() {
   return (
     <div>
       <Header />
@@ -13,6 +13,6 @@ const Home = () => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Home;
