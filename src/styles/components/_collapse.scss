@@ -1,0 +1,50 @@
+.drop-down {
+    background: #ff6060;
+    font-size: 24px;
+    margin-top: 20px;
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description {
+    background: #F6F6F6;
+    font-size: 20px;
+    padding: 20px 20px 7px 10px;
+    border-radius: 5px;
+    color: #ff6060;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes rotate180 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .rotate-icon {
+    animation: rotate180 0.3s linear forwards;
+}
+
+@keyframes rotate180Reverse {
+    0% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .rotate-icon-reverse {
+    animation: rotate180Reverse 0.3s linear forwards;
+}
