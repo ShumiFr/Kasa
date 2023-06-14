@@ -11,16 +11,21 @@ const Collapse = ({ title, description }) => {
   };
 
   return (
-    <div>
-      <p onClick={toggleCollapse} className="drop-down">
-        <span>{title}</span>
-        <FontAwesomeIcon
-          icon={faChevronUp}
-          className={isOpen ? "rotate-icon" : ""}
-        />
-      </p>
-      {isOpen && <div className="description">{description}</div>}
-    </div>
+    <li>
+      <div>
+        <p
+          onClick={toggleCollapse}
+          className={`drop-down ${isOpen ? "open" : ""}`}
+        >
+          <span>{title}</span>
+          <FontAwesomeIcon
+            icon={faChevronUp}
+            className={`rotate-icon ${isOpen ? "rotate-icon-open" : ""}`}
+          />
+        </p>
+        {isOpen && <div className="description">{description}</div>}
+      </div>
+    </li>
   );
 };
 
