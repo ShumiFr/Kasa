@@ -1,0 +1,17 @@
+.logement-host {
+    display: flex;
+    align-items: center;
+}
+
+.logement-host span {
+    color: #ff6060;
+    font-size: 18px;
+    width: 90px;
+    text-align: right;
+    margin: 0 10px;
+}
+
+.logement-host img {
+    width: 64px;
+    border-radius: 50%;
+}

@@ -1,10 +1,11 @@
 import React from "react";
 import Navigation from "./Navigation";
+import Logo from "../assets/img/Logo.svg";
 
 const Header = () => {
   return (
     <header className="header">
-      <img src="./Logo.svg" alt="Logo Kasa" />
+      <img src={Logo} alt="Logo Kasa" />
       <Navigation />
     </header>
   );

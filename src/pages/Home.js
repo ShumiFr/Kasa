@@ -4,15 +4,14 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 
-function Home() {
+const Home = ({ url }) => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner srcImage={url} />
       <Gallery />
       <Footer />
     </div>
   );
-}
-
+};
 export default Home;

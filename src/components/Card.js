@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
     <div className="card">
-      <div className="overlay">
+      <Link to={`/logement/${props.id}`}>
+        {" "}
+        <div className="overlay"></div>
         <img src={props.cover} alt="logement" />
         <span>{props.title}</span>
-      </div>
+      </Link>
     </div>
   );
 };
