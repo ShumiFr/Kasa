@@ -32,3 +32,10 @@
     border-radius: 30px;
     object-fit: cover;
 }
+
+@media screen and (max-width:1000px) {
+    .banner {
+        height: 110px;
+        margin: 0 20px;
+    }
+}

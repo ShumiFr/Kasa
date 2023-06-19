@@ -23,7 +23,9 @@ const Collapse = ({ title, description }) => {
             className={`rotate-icon ${isOpen ? "rotate-icon-open" : ""}`}
           />
         </p>
-        {isOpen && <div className="description">{description}</div>}
+        <div className="description" style={{
+          maxHeight: isOpen ? 300 : 0
+        }}>{description}</div>
       </div>
     </li>
   );

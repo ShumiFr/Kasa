@@ -24,3 +24,22 @@
     color: #ffa5a5;
     transition: 0.3s all;
 }
+
+@media screen and (max-width:1000px) {
+    .error404 h1 {
+        font-size: 25vw;
+    }
+
+    .error404 p {
+        font-size: 18px;
+        text-align: center;
+        padding-inline: 10px;
+    }
+
+
+    .error404 a span {
+        font-size: 14px;
+        padding-inline: 10px;
+    }
+
+}

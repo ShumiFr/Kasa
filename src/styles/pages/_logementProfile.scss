@@ -52,3 +52,36 @@
     width: 100%;
 }
 
+@media screen and (max-width:1000px) {
+
+    .description-zone {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .description-zone .logement-title-and-description {
+        width: 100%;
+    }
+
+    .description-zone .logement-host-and-rates {
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .collapses {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    .collapses {
+       flex-direction: column;
+    }
+    .collapses li {
+       width: 100%;
+    }
+}
+

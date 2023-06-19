@@ -21,6 +21,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+}
+
+.open + .description{
+  opacity: 1;
+  transition: 0.4s max-height;
 }
 
 @keyframes rotate180 {
@@ -47,4 +53,17 @@
 
 .rotate-icon-open {
   transform: rotate(180deg);
+}
+
+@media screen and (max-width:1000px) {
+
+  .drop-down {
+      font-size: 3vw;
+      margin-top: 15px;
+  }
+
+  .description {
+      font-size: 2vw;
+      padding-top: 2.5vw
+  }
 }
