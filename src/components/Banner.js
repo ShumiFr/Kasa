@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const Banner = ({ srcImage }) => {
   const [backgroundImage, setBackgroundImage] = useState("");
   const [bannerTitle, setBannerTitle] = useState("");
+
   useEffect(() => {
     const currentPath = window.location.pathname;
     if (currentPath === "/") {
@@ -13,12 +14,14 @@ const Banner = ({ srcImage }) => {
       setBannerTitle("");
     }
   }, []);
+
   const bannerStyle = {
     backgroundImage: backgroundImage,
     backgroundPosition: "center",
     backgroundSize: "cover",
     borderRadius: "30px",
   };
+
   return (
     <div className="banner" style={bannerStyle}>
       <div className="overlay"></div>

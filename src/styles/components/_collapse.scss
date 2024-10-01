@@ -14,19 +14,39 @@
 .description {
   background: #f6f6f6;
   font-size: 20px;
-  padding: 20px 20px 7px 10px;
+  padding: 20px;
   border-radius: 5px;
   color: #ff6060;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0;
 }
 
-.open + .description{
+.description.open {
+  height: auto;
   opacity: 1;
-  transition: 0.4s max-height;
+  padding: 20px;
+}
+
+.rotate-icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon-open {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1000px) {
+  .drop-down {
+    font-size: 3vw;
+    margin-top: 15px;
+  }
+
+  .description {
+    font-size: 2vw;
+    padding: 2.5vw;
+  }
 }
 
 @keyframes rotate180 {
@@ -44,26 +64,5 @@
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-
-.rotate-icon {
-  transition: transform 0.3s ease;
-}
-
-.rotate-icon-open {
-  transform: rotate(180deg);
-}
-
-@media screen and (max-width:1000px) {
-
-  .drop-down {
-      font-size: 3vw;
-      margin-top: 15px;
-  }
-
-  .description {
-      font-size: 2vw;
-      padding-top: 2.5vw
   }
 }
