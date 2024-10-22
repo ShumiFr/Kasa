@@ -1,53 +1,48 @@
-.logement-banner {
-    margin-inline: 40px;
-    height: 415px;
-    position: relative;
+.carousel {
+  margin-inline: 40px;
+  height: 415px;
+  position: relative;
 }
 
-.logement-banner .img-banner {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
+.carousel .img-banner {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel .img-banner.active-banner {
+  display: block;
+}
+
+.carousel .counter {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: #fff5f528;
+  border-radius: 10px;
+  width: 50px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 1000px) {
+  .carousel {
+    margin-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .carousel {
+    max-height: 255px;
+    height: 50vw;
+  }
+
+  .carousel .counter {
     display: none;
-}
-
-.logement-banner .img-banner.active-banner {
-    display: block;
-}
-
-.logement-banner .counter {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    background: #fff5f528;
-    border-radius: 10px;
-    width: 50px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-@media screen and (max-width:1000px) {
-
-    .logement-banner {
-        margin-inline: 20px;
-    }
-
-}
-
-@media screen and (max-width:740px) {
-
-    .logement-banner {
-        max-height: 255px;
-        height: 50vw;
-    }
-
-    .logement-banner .counter {
-        /* font-size: 1.5vw; */
-        display: none;
-    }
-
+  }
 }
